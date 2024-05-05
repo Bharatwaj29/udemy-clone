@@ -66,11 +66,18 @@ body{
     border-bottom: solid black 1px;
 }
 .categories p{
-    border: solid violet;
     color: white;
     background-color: violet;
     padding: 5px;
     border-radius: 30px;
+    cursor: pointer;
+    border: solid violet 1px;
+}
+.categories p:hover{
+    background-color: transparent;
+    color: black;
+    border: solid violet 1px;
+    transition: 1s;
 }
 .saleimage img{
     width: 100%;
@@ -86,7 +93,20 @@ body{
     position: absolute;
     top: 10%;
     left: 10%;
-
+    animation-name: scale;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes scale {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .coursecard{
     padding: 10px;
