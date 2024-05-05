@@ -12,6 +12,10 @@ body{
     border-bottom: solid black 1px;
     gap: 2px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 .navbarl__title{
     color: violet;
@@ -36,6 +40,24 @@ body{
 .navbarr{
     display: flex;
     gap: 20px;
+    align-items: center;
+}
+.ml{
+    position: relative;
+    cursor: pointer;
+}
+.popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+}
+.ml:hover .popup{
+    display: block;
 }
 .categories{
     display: flex;
@@ -52,6 +74,19 @@ body{
 }
 .saleimage img{
     width: 100%;
+}
+.saleimage{
+    position: relative;
+}
+.offerbox{
+    border: solid black 1px;
+    background-color: white;
+    width: 35%;
+    padding: 2%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
 }
 .coursecard{
     padding: 10px;
