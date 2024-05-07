@@ -42,6 +42,9 @@ body{
     gap: 20px;
     align-items: center;
 }
+.menu{
+    display: none;
+}
 .ml{
     position: relative;
     cursor: pointer;
@@ -110,9 +113,12 @@ body{
 }
 .coursecard{
     padding: 10px;
+
 }
 .coursecard__img{
-    width: 280px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 .coursecard__img img{
     width: 100%;
@@ -168,4 +174,24 @@ body{
 }
 .d1 p,.d2 p{
     padding: 10px;
+}
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .coursecard__img{
+        flex-basis: 40%;
+    }
+    .categories{
+        display: none;
+    }
+    .navbarc, .navbarr{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    
 }
